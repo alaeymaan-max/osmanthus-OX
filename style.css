@@ -1,0 +1,44 @@
+/* Fail style.css */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'future', sans-serif; /* Perlu import font ini */
+}
+
+.Pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 42px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.Pill--black {
+    background-color: #000;
+    color: #fff;
+}
+
+.Pill--white {
+    background-color: #fff;
+    color: #000;
+}
+
+.Pill:hover {
+    opacity: 0.8;
+}
+
+/* Animasi tatalan untuk bahagian Blockchain */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+    display: flex;
+    animation: scroll 60s linear infinite;
+}
